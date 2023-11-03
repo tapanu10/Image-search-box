@@ -1,0 +1,118 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+
+
+}
+body{
+    line-height: 1.6;
+}
+h1{
+    font-size: 36px;
+    font-weight: bold;
+    text-align:center;
+    margin:40px 0 60px 0;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+
+}
+#searchinput
+{
+    width:60%;
+    max-width:400px;
+    padding:10px 20px;
+    border:none;
+    box-shadow:0 0 6px rgb(rgb(61, 41, 41), rgb(76, 110, 76), rgb(54, 54, 85));
+    border-radius: 5px;
+    font-size:18px;
+    color:#333;
+}
+#searchbutton
+{
+    padding: 10px 20px;
+    background-color: aqua;
+    cursor:pointer;
+    border: none;
+    border-radius:5px;
+    margin-left:10px;
+}
+.search{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin:0 auto;
+}
+.searchresults
+{
+    margin-bottom: 60px;
+    width:30%;
+    height:100%;
+    border-radius: 3px;
+    box-shadow:0 0 6px rgb(rgb(61, 41, 41), rgb(76, 110, 76), rgb(54, 54, 85));
+    overflow:hidden;
+}
+.searchresults img
+{
+   
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+    
+}
+.searchresults:hover img
+{
+    opacity:0.8;
+}
+.searchresults a
+{
+   font-size:20px;
+   text-decoration: none;
+   color:#333;
+   display: block;
+   padding: 10px;
+   text-transform: capitalize;
+}
+#showmore
+{
+    background-color: aqua;
+   
+    padding:10px 20px;
+    border:none;
+    box-shadow:0 0 6px rgb(rgb(61, 41, 41), rgb(76, 110, 76), rgb(54, 54, 85));
+    border-radius: 5px;
+    text-align: center;
+    font-size:18px;
+    color:#333;
+    margin:30px auto;
+    
+    cursor: pointer;
+}
+@media screen  and(max-width: 768px)
+    {
+        .search{
+            padding: 20px;
+
+        }
+        .searchresults
+        {
+            width: 45%;
+        }
+    
+}
+@media screen  and(max-width: 480px)
+    {
+        .searchresults
+        {
+            width: 45%;
+        }
+    
+}
